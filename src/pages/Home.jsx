@@ -4,7 +4,7 @@ import { scrollToTop } from '../utils/util';
 
 export default function Home() {
 	return (
-		<main>
+		<>
 			<header>
 				<div className='home-container'>
 					<H1>
@@ -28,6 +28,7 @@ export default function Home() {
 					</NavButton>
 				</Nav>
 			</header>
-		</main>
+			<main></main>
+		</>
 	);
 }
