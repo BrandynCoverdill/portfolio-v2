@@ -1,9 +1,3 @@
-// TODO: Write Nav component
-
-export default function Nav() {
-	return (
-		<div>
-			<p>Nav</p>
-		</div>
-	);
+export default function Nav({ children }) {
+	return <nav className='nav'>{children}</nav>;
 }

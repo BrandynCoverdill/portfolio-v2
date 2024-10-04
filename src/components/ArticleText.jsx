@@ -1,9 +1,3 @@
-// TODO: Write ArticleText component
-
-export default function ArticleText() {
-	return (
-		<div>
-			<p>ArticleText</p>
-		</div>
-	);
+export default function ArticleText({ children }) {
+	return <p className='article-text'>{children}</p>;
 }

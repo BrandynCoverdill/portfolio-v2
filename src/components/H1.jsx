@@ -1,9 +1,3 @@
-// TODO: Write H1 component
-
-export default function H1() {
-	return (
-		<div>
-			<p>H1</p>
-		</div>
-	);
+export default function H1({ children }) {
+	return <h1 className='H1'>{children}</h1>;
 }

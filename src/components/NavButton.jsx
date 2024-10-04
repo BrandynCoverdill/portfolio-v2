@@ -1,9 +1,7 @@
-// TODO: Create NavButton component
-
-export default function NavButton() {
+export default function NavButton({ children, refLink, onClick }) {
 	return (
-		<div>
-			<p>NavButton</p>
-		</div>
+		<a className='nav-button' href={refLink}>
+			{children}
+		</a>
 	);
 }
