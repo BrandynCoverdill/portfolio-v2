@@ -1,8 +1,61 @@
 // The homepage of the app
-import { H1, ArticleText, Nav, NavButton } from '../utils/components';
+import { useState } from 'react';
+import {
+	H1,
+	ArticleText,
+	Nav,
+	NavButton,
+	SectionBanner,
+	SocialMediaButton,
+} from '../utils/components';
 import { scrollToTop } from '../utils/util';
 
 export default function Home() {
+	const [projects, setProjects] = useState([
+		{
+			name: 'Portfolio',
+			description: '',
+			image: '',
+			links: ['', ''],
+			skills: ['', '', '', '', ''],
+		},
+		{
+			name: 'Todos App',
+			description: '',
+			image: '',
+			links: ['', ''],
+			skills: ['', '', '', '', ''],
+		},
+		{
+			name: 'Mock eShop',
+			description: '',
+			image: '',
+			links: ['', ''],
+			skills: ['', '', '', '', ''],
+		},
+		{
+			name: 'Message Board',
+			description: '',
+			image: '',
+			links: ['', ''],
+			skills: ['', '', '', '', ''],
+		},
+		{
+			name: 'Memory Game',
+			description: '',
+			image: '',
+			links: ['', ''],
+			skills: ['', '', '', '', ''],
+		},
+		{
+			name: 'Tic-tac-toe',
+			description: '',
+			image: '',
+			links: ['', ''],
+			skills: ['', '', '', '', ''],
+		},
+	]);
+
 	return (
 		<>
 			<header>
@@ -12,6 +65,12 @@ export default function Home() {
 						.
 					</H1>
 					<ArticleText>I'm a Web Developer.</ArticleText>
+					<div className='home-social-media-container'>
+						<SocialMediaButton size={'s'} />
+						<SocialMediaButton size={'s'} />
+						<SocialMediaButton size={'s'} />
+						<SocialMediaButton size={'s'} />
+					</div>
 				</div>
 				<Nav>
 					<NavButton refLink={'#'} onClick={() => scrollToTop()}>
@@ -20,7 +79,7 @@ export default function Home() {
 					<NavButton refLink={'#projects'} onClick={() => {}}>
 						Projects
 					</NavButton>
-					<NavButton refLink={'#about'} onClick={() => {}}>
+					<NavButton refLink={'#jouney'} onClick={() => {}}>
 						Development Journey
 					</NavButton>
 					<NavButton refLink={'#contact'} onClick={() => {}}>
@@ -28,7 +87,23 @@ export default function Home() {
 					</NavButton>
 				</Nav>
 			</header>
-			<main></main>
+			<main className='main-container'>
+				<section id='projects'>
+					<SectionBanner>
+						<H1>Projects</H1>
+					</SectionBanner>
+				</section>
+				<section id='journey'>
+					<SectionBanner>
+						<H1>Development Journey</H1>
+					</SectionBanner>
+				</section>
+				<section id='contact'>
+					<SectionBanner>
+						<H1>Contact</H1>
+					</SectionBanner>
+				</section>
+			</main>
 		</>
 	);
 }

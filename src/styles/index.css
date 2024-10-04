@@ -52,6 +52,31 @@
 	color: white;
 }
 
+.section-banner {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	height: 20vh;
+	background-color: #2d2d2d;
+	color: white;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.home-social-media-container {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+}
+
 /* Helper styles */
 
 .developer-name {
