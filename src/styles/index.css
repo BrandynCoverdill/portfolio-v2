@@ -35,6 +35,7 @@
 	background: #00a8ff;
 	position: sticky;
 	top: 0;
+	gap: 1em;
 }
 
 .nav-button {
