@@ -24,10 +24,10 @@ export default function Home() {
 					</H1>
 					<H2>I'm a Web Developer.</H2>
 					<div className='home-social-media-container'>
-						<SocialMediaButton size={'medium'} media={'github'} />
-						<SocialMediaButton size={'medium'} media={'linkedin'} />
-						<SocialMediaButton size={'medium'} media={'twitter'} />
-						<SocialMediaButton size={'medium'} media={'facebook'} />
+						<SocialMediaButton size={'large'} media={'github'} />
+						<SocialMediaButton size={'large'} media={'linkedin'} />
+						<SocialMediaButton size={'large'} media={'twitter'} />
+						<SocialMediaButton size={'large'} media={'facebook'} />
 					</div>
 				</div>
 				<Nav>
@@ -37,7 +37,7 @@ export default function Home() {
 					<NavButton refLink={'#projects'} onClick={() => {}}>
 						Projects
 					</NavButton>
-					<NavButton refLink={'#jouney'} onClick={() => {}}>
+					<NavButton refLink={'#journey'} onClick={() => {}}>
 						Development Journey
 					</NavButton>
 					<NavButton refLink={'#contact'} onClick={() => {}}>
