@@ -9,25 +9,25 @@ export default function SocialMediaButton({ size, media }) {
 		case 'Github':
 			return (
 				<a href={social.link} target='_blank' className='SocialMediaButton'>
-					<FaGithub fontSize={size} />
+					<FaGithub fontSize={size} color='white' />
 				</a>
 			);
 		case 'LinkedIn':
 			return (
 				<a href={social.link} target='_blank' className='SocialMediaButton'>
-					<FaLinkedin fontSize={size} />
+					<FaLinkedin fontSize={size} color='white' />
 				</a>
 			);
 		case 'Twitter':
 			return (
 				<a href={social.link} target='_blank' className='SocialMediaButton'>
-					<FaXTwitter fontSize={size} />
+					<FaXTwitter fontSize={size} color='white' />
 				</a>
 			);
 		case 'Facebook':
 			return (
 				<a href={social.link} target='_blank' className='SocialMediaButton'>
-					<FaFacebook fontSize={size} />
+					<FaFacebook fontSize={size} color='white' />
 				</a>
 			);
 	}
