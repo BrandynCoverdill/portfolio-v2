@@ -74,7 +74,8 @@
 .home-social-media-container {
 	display: flex;
 	flex-direction: row;
-	gap: 1em;
+	gap: 2em;
+	margin-top: 1em;
 }
 
 /* Helper styles */

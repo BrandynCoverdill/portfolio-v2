@@ -43,3 +43,16 @@ export function getSocialMedia(media) {
 	}
 	return social;
 }
+
+export function getSocialMediaIconSize(media) {
+	switch (media) {
+		case 'small':
+			return '16px';
+		case 'medium':
+			return '26px';
+		case 'large':
+			return '32px';
+		default:
+			return '26px';
+	}
+}
