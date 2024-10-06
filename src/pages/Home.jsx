@@ -66,10 +66,10 @@ export default function Home() {
 					</H1>
 					<ArticleText>I'm a Web Developer.</ArticleText>
 					<div className='home-social-media-container'>
-						<SocialMediaButton size={'s'} />
-						<SocialMediaButton size={'s'} />
-						<SocialMediaButton size={'s'} />
-						<SocialMediaButton size={'s'} />
+						<SocialMediaButton size={'large'} media={'github'} />
+						<SocialMediaButton size={'large'} media={'linkedin'} />
+						<SocialMediaButton size={'large'} media={'twitter'} />
+						<SocialMediaButton size={'large'} media={'facebook'} />
 					</div>
 				</div>
 				<Nav>
