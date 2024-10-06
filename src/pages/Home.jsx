@@ -1,5 +1,5 @@
 // The homepage of the app
-import { useState } from 'react';
+import { useProjects } from '../utils/hooks';
 import {
 	H1,
 	ArticleText,
@@ -12,50 +12,7 @@ import {
 import { scrollToTop } from '../utils/util';
 
 export default function Home() {
-	const [projects, setProjects] = useState([
-		{
-			name: 'Portfolio',
-			description: '',
-			image: '',
-			links: ['', ''],
-			skills: ['', '', '', '', ''],
-		},
-		{
-			name: 'Todos App',
-			description: '',
-			image: '',
-			links: ['', ''],
-			skills: ['', '', '', '', ''],
-		},
-		{
-			name: 'Mock eShop',
-			description: '',
-			image: '',
-			links: ['', ''],
-			skills: ['', '', '', '', ''],
-		},
-		{
-			name: 'Message Board',
-			description: '',
-			image: '',
-			links: ['', ''],
-			skills: ['', '', '', '', ''],
-		},
-		{
-			name: 'Memory Game',
-			description: '',
-			image: '',
-			links: ['', ''],
-			skills: ['', '', '', '', ''],
-		},
-		{
-			name: 'Tic-tac-toe',
-			description: '',
-			image: '',
-			links: ['', ''],
-			skills: ['', '', '', '', ''],
-		},
-	]);
+	const [projects, setProjects] = useProjects();
 
 	return (
 		<>
@@ -91,17 +48,17 @@ export default function Home() {
 			<main className='main-container'>
 				<section id='projects'>
 					<SectionBanner>
-						<H1>Projects</H1>
+						<H2>Projects</H2>
 					</SectionBanner>
 				</section>
 				<section id='journey'>
 					<SectionBanner>
-						<H1>Development Journey</H1>
+						<H2>Development Journey</H2>
 					</SectionBanner>
 				</section>
 				<section id='contact'>
 					<SectionBanner>
-						<H1>Contact</H1>
+						<H2>Contact</H2>
 					</SectionBanner>
 				</section>
 			</main>
