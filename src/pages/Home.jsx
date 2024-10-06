@@ -3,6 +3,7 @@ import { useState } from 'react';
 import {
 	H1,
 	ArticleText,
+	H2,
 	Nav,
 	NavButton,
 	SectionBanner,
@@ -64,7 +65,7 @@ export default function Home() {
 						Hello, I'm <span className='developer-name'>Brandyn Coverdill</span>
 						.
 					</H1>
-					<ArticleText>I'm a Web Developer.</ArticleText>
+					<H2>I'm a Web Developer.</H2>
 					<div className='home-social-media-container'>
 						<SocialMediaButton size={'medium'} media={'github'} />
 						<SocialMediaButton size={'medium'} media={'linkedin'} />

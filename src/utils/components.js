@@ -3,6 +3,7 @@ import Button from '../components/Button';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 import H1 from '../components/H1';
+import H2 from '../components/H2';
 import Nav from '../components/Nav';
 import NavButton from '../components/NavButton';
 import ProfileImage from '../components/ProfileImage';
@@ -24,6 +25,7 @@ export {
 	ContactForm,
 	Footer,
 	H1,
+	H2,
 	Nav,
 	NavButton,
 	ProfileImage,
